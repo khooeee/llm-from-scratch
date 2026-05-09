@@ -1,5 +1,10 @@
 
 
+import torch
+
+from model import GPT
+
+
 def generate_greedy(model, idx, max_new_tokens):
     for _ in range(max_new_tokens):
         idx_cond = idx[:, -model.config.block_size:]

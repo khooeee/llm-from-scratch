@@ -1,5 +1,7 @@
 import math
 import torch
+from model import GPT, GPTConfig
+from generate import generate
 
 def load_data(filepath, block_size, batch_size, device):
     with open(filepath, "r") as f:
