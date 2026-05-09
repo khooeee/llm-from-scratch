@@ -143,6 +143,7 @@ def train(data_path, max_steps=5000, batch_size=64,
 if __name__ == "__main__":
     data_path = "../data/shakespeare.txt"
 
+    # CKTODO
     # tiny — fast, good for testing ideas
     train(data_path, n_layer=2, n_head=2, n_embd=128)
 
