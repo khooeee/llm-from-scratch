@@ -141,4 +141,13 @@ def train(data_path, max_steps=5000, batch_size=64,
     return model, stoi, itos
 
 if __name__ == "__main__":
-    train("../data/shakespeare.txt")
+    data_path = "../data/shakespeare.txt"
+
+    # tiny — fast, good for testing ideas
+    train(data_path, n_layer=2, n_head=2, n_embd=128)
+
+    # # medium — default, good baseline
+    # train(data_path, n_layer=6, n_head=6, n_embd=384)
+
+    # # large — needs more data to justify
+    # train(data_path, n_layer=12, n_head=12, n_embd=768)
