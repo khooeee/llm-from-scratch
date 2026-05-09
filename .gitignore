@@ -10,7 +10,7 @@ wheels/
 .venv
 
 # Scratchpads (working code, not committed)
-**/scratchpad/
+# **/scratchpad/
 
 # Training artifacts
 *.pt
